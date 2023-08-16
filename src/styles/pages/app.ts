@@ -1,16 +1,12 @@
 import { styled } from '../'
 
 export const Container = styled('div', {
+    position: 'relative',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
     justifyContent: 'center',
     minHeight: '100vh',
-})
-
-export const Header = styled('header', {
-    padding: '2.5rem 0 2rem',
-    width: '100%',
-    maxWidth: '1180px',
-    margin: '0 auto'
+    maxWidth: '100vw',
+    overflow: 'hidden'
 })
