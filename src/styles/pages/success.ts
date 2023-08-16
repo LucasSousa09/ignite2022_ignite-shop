@@ -13,7 +13,7 @@ export const SuccessContainer = styled('main', {
     h1: {
         color: '$gray100',
         fontSize: '$2xl',
-        paddingBottom: '4rem',
+        paddingBottom: '1.5rem',
     },
 
     p: {
@@ -40,20 +40,42 @@ export const SuccessContainer = styled('main', {
 
 })
 
+export const ImagesBox = styled('div', {
+    display: 'flex',
+
+    marginBottom: '3rem',
+})
+
 export const ImageContainer = styled('div', {
-    height: 145,
-    width: 130,
+    height: 140,
+    width: 140,
     
-    marginBottom: '2rem',
     
     background: 'linear-gradient(180deg, #1EA483 0%, #7465D4 100%)',
-    borderRadius: 8,
-
+    borderRadius: '50%',
+    
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-
+    
     img:{
         objectFit: 'cover',
+        borderRadius: '50%',
+        height: '100%',
+        width: '100%',
+        boxShadow: '0 0 60px 12px rgba(0,0,0,0.8)',
     },
+    
+    '&:nth-child(1)': {
+        
+    },
+
+    '&:nth-child(2)': {
+        marginLeft: -55
+    },
+
+    '&:nth-child(3)': {
+        marginLeft: -55
+    }
 })
+

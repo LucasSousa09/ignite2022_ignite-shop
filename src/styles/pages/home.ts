@@ -33,22 +33,40 @@ export const Product = styled('div', {
         justifyContent: 'space-between',
         borderRadius: '6px',
         backgroundColor: 'rgba(32,32,36,0.9)',
-        padding: '2rem',
-        paddingRight: '2.5rem',
+        padding: '1.25rem',
+        paddingRight: '2rem',
         
         transform: 'translateY(110%)',
         opacity: 0,
         transition: 'all 0.2s ease-in-out',
         
-        strong: {
-            color: '$gray100',
-            fontSize: '$lg'
+        div: {
+            strong: {
+                display: 'block',
+                color: '$gray100',
+                fontSize: '$lg',
+                lineHeight: 1.6,
+            },
+    
+            span: {
+                fontSize: '$xl',
+                fontWeight: 'bold',
+                color: '$green500',
+                lineHeight: 1.4
+            }
         },
 
-        span: {
-            fontSize: '$xl',
-            fontWeight: 'bold',
-            color: '$green500'
+        button: {
+            background: '$green500',
+            border: 'none',
+            borderRadius: 6,
+            padding: 12,
+            cursor:  'pointer',
+            transition: 'background .2s ease',
+
+            '&:hover': {
+                background: '$green300'
+            }
         }
     },
 
